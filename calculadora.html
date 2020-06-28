@@ -8,34 +8,39 @@
 </head>
 <body>
   <div class="catculator">
-    <div id="input"></div>
-    <div id="panel">
+    <div id="input" class="input"></div>
+    <div class="panel-left">
       <div class="numbers">
-        <div class="buttons">1</div>
-        <div class="buttons">4</div>
-        <div class="buttons">7</div>
-        <div class="buttons">0</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
       </div>
       <div class="numbers">
-        <div class="buttons">2</div>
-        <div class="buttons">5</div>
-        <div class="buttons">8</div>
-        <div class="buttons">.</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
       </div>
       <div class="numbers">
-        <div class="buttons">3</div>
-        <div class="buttons">6</div>
-        <div class="buttons">9</div>
-        <div class="buttons">C</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
       </div>
-      <div class="operator">
-        <div class="buttons">+</div>
-        <div class="buttons">-</div>
-        <div class="buttons">&times;</div>
-        <div class="buttons">&divide;</div>
+      <div class="numbers">
+        <div>0</div>
+        <div>.</div>
+        <div>c</div>
       </div>
     </div>
-    <input type="submit" class="result buttons" value="=">
+    <div class="panel-right">
+      <div class="operator">
+        <div class="suma">+</div>
+        <div>-</div>
+        <div>&times;</div>
+        <div>&divide;</div>
+      </div>
+    </div>
+      <input type="submit" id="result" class="result" value="=">
+    </div>
   </div>
 </body>
 </html>
