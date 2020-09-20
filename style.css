@@ -5,66 +5,78 @@
 }
 body{
   background-color: black;
-  color: white;
+  color: #f1f1f1;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
   font-size: 1.8rem;
 }
 .catculator{
-  width: 500px;
-  margin: auto 30%;
+  width: 482px;
+  margin: 4% auto;
   padding: 20px;
  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
- border: 1px solid blue;
+ border: 1px solid #4d5dad;
  border-radius: 1px;
 }
 .input{
-  height: 60px;
-  border: 1px solid blue;
+  height: 90px;
+  border: 1px solid #4d5dad;
+  background-color: #141448;
+  float: none;
 }
 .panel-left{
   min-width: 80%;
-  float: left;
 }
 .numbers{
-  margin-top: 20px;
-}
-.numbers div{
-  display: inline-block;
-  margin: 3%;
-  padding: 4%;
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  width: 80px;
-}
-.panel-right{
-  margin-top: 20px;
   float: left;
 }
-.operator div{
-  display: block;
-  padding: 20%;
-  border: 1px solid #ccc;
+.numbers div{
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  background-color:#121a42;
+}
+.numbers div:hover{
+  background-color:#475084;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.numbers div:active, .operator div:active, .result:active{
+  font-weight: bold;
+}
+.numbers div, .operator div{
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #30375a;
   border-radius: 1px;
-  width: 80px;
-  height: 63px;
+  width: 90px;
+  cursor: pointer;
 }
-.operator div:first-child{
-  margin-top: 13%;
+.operator div{
+  background-color: #202c65;
+  border: 1px solid #434c82;
+  margin-top: 40px;
 }
-.operator div:not(suma){
-  margin-top: 53%;
+.operator div:hover{
+  background-color: #6070d2;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .result{
-  clear: both;
-  display: inline-block;
-  width: 95%;
-  height: 57px;
-  margin: 2%;
+  width: 90px;
+  height: 289px;
   padding: 2%;
+  margin-top: 5px;
+  margin-left: 18px;
   border-style: none;
+  vertical-align: top;
   border-radius: 1px;
-  background-color: blue;
+  background-color: #2281ce;
+  cursor: pointer;
   color: white;
+}
+.result:hover{
+  background-color: #57b0f7;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"]:focus {
+    outline: none;
 }
